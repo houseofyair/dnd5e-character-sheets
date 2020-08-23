@@ -1,3 +1,4 @@
 module.exports = {
-    publicPath: '/dnd5e-character-sheets/'
-}
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/dnd5e-character-sheets/" : "/",
+};
